@@ -1,0 +1,17 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.container{
+    display: grid;
+    grid: 1fr 1fr;
+    background-color: rgb(177, 212, 201);
+    height: 100vh;
+}
+.left{
+    background-color: aquamarine;
+}
+.right{
+    background-color: gold;
+}
