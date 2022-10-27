@@ -5,23 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="consulta.css" rel="stylesheet" type="text/css">
+    <link href="footer.css" rel="stylesheet" type="text/css">
+    <link href="barra.css" rel="stylesheet" type="text/css">
+    
+    <div class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobrenosotros">Sobre Nosotros</a>
+        <div class="servicios">
+          <button class="serviciosbtn">Servicios
+            <i class="down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Adopcion</a>
+            <a href="#">Vacunacion</a>
+            <a href="#">Consulta</a>
+          </div>
+        </div>
+        <a href="#tienda">Tienda</a>
+        <a href="#Contactenos">Contactenos</a>
+      </div>
     <title>Consultas</title>
 </head>
+
 <body>
     <header>
-        <h1 class="text-center">Veterinaria Huellitas</h1>
+        <h1 class="text-center">Una cita para tu mascota</h1>
+        <p>Todas las citas se confirmarán previamente dentro de las 48 horas de haber recibido la solicitud.</p>
     </header>
     <section>
         <div class="container">
-            <div class="left">
-                <form action="">
-                    <div class="datosPersona">
+            <!-- <div class="left"> -->
+                <form action="consulta.html" id="">
+                    <div class="datosPersona"> 
                         <h2>Datos del Dueño</h2>
                             <label for="nombre">Nombre</label>
                             <input type="text" class="form-control" name="nombre" placeholder="Nombre" required >
 
                             <label for="apellidos">Apellidos</label>
-                            <input type="text" class="form-control" name="apellidos" placeholder="Apellidos" required >
+                            <input type="text"  class="form-control" name="apellidos" placeholder="Apellidos" required >
                                 
                             <label for="correo">Correo</label>
                             <input type="email" class="form-control" name="correo" placeholder="Correo Electronico">
@@ -55,7 +76,8 @@
                                     <option value="Villa María del Triunfo">Villa María del Triunfo</option>
                                     <option value="San Juan de Miraflores">San Juan de Miraflores</option>
                                 </select>      
-                    </div>                            
+                    </div>
+                    <!-- <div class="right">                          -->
                     <div class="datosMascota">
                         <h2>Datos de la mascota</h2>
 
@@ -87,7 +109,8 @@
                             <input type="number" min="0" class="form-control" name="peso" placeholder="Peso de la mascota">
     
                             <label for="vacuna">Vacuna</label>
-                            <input type="checkbox"  name="vacuna" value="Rabia">Rabia</input>
+                            <div id="vacuna">
+                            <input type="checkbox" name="vacuna" value="Rabia">Rabia</input>
                             <input type="checkbox" name="vacuna" value="Parvovirus">Parvovirus</input>
                             <input type="checkbox" name="vacuna" value="Moquillo" >Moquillo</input>
                             <input type="checkbox" name="vacuna" value="Leptospirosis">Leptospirosis</input>
@@ -96,7 +119,7 @@
                             <input type="checkbox" name="vacuna" value="Bordetella">Bordetella</input>
                             <input type="checkbox" name="vacuna" value="Influenza">Influenza</input>
                             <input type="checkbox" name="vacuna" value="Otras">Otras</input>
-    
+                            </div>
                             <label for="sexo">Sexo</label>
                             <input type="radio" name="sexo" value="macho">Macho</input>
                             <input type="radio" name="sexo" value="hembra">Hembra</input>
@@ -109,20 +132,39 @@
         
                             <label for="comentario">Comentario</label>
                             <textarea name="comentario" class="form-control" placeholder="Comentario" rows="4" cols="70"></textarea>
-                            <div class="botonguardar"><button type="button" class="btn btn-primary" >Guardar</button></div>               
-                    </div>                
+
+                    <!-- </div>> -->
+                            <div class="botonguardar"><button type="button" class="btn btn-primary" >Solicitar cita!</button></div>               
+                    </div>                 
                 </form>
-            </div>
-            <div class="right">
-                <img src="https://www.fundacion-affinity.org/sites/default/files/los-10-sonidos-principales-del-perro.jpg" alt="">
-            </div>    
+            <!-- </div>  -->
+            <!-- <div class="right">
+                 <img src="https://www.fundacion-affinity.org/sites/default/files/los-10-sonidos-principales-del-perro.jpg" alt="">
+            </div>     -->
         </div>
     </section>
-    <footer>
-        Derechos Reservados &copy; 2022
-    </footer>    
+    
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                        class="icon ion-social-snapchat"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a><a href="#"><i 
+                        class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Huellita © 2022</p>
+        </footer>
+    </div>   
 </body>
 </html>
+
+
 
 
 
